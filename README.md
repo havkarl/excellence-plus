@@ -1,4 +1,4 @@
-# Brunch app
+# Official Excellence Plus Website
 This is a HTML5 application, built with [Brunch](http://brunch.io).
 
 ## Getting started
