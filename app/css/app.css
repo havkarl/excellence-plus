@@ -1,0 +1,249 @@
+/*------------------------------------------------------------------
+Theme Name: Motorboat
+Version: 1.0
+Author: Karl Haviland
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[TABLE OF CONTENTS]
+
+        1. BLOCK STYLES
+        2. HEADER
+
+
+-------------------------------------------------------------------*/
+
+/**
+  BLOCK STYLES
+**/
+html, body {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    background-color: #f0f3f6;
+}
+
+h2 {
+    /*color: #606060;*/
+    color: #333;
+}
+
+.section-content {
+    padding: 4rem 0;
+}
+
+/** TOP NAV **/
+.thin-bar {
+    border-bottom: 1px solid #333;
+    padding-top: .4rem;
+    height: 1.9rem;
+    background: #71b48a;
+    font-size: .9rem;
+}
+.thin-bar p {
+    color: #fff;
+}
+.thin-bar a {
+    color: #fff;
+}
+.thin-bar .fa {
+    color: #fff;
+}
+
+/** NAV **/
+.navbar {
+    background-color: #fff;
+    padding: 2rem 0 4rem 0;
+}
+
+.navbar-toggleable-md .navbar-brand{
+    color: #333;
+    font-size: 2.5rem;
+    font-family: bitter, serif;
+}
+.navbar-toggleable-md .navbar-brand  img{
+    height: 5rem;
+    padding-left: .7rem;
+    padding-right: .3rem;
+}
+
+.navbar-toggleable-md .navbar-nav .nav-link {
+    color: #333;
+    font-size: 1.2rem;
+    padding: 0 .7rem 0 .7rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.nav-donate-link {
+    margin-left:2rem;
+    font-weight: 600;
+}
+
+.navbar-toggleable-md .navbar-nav .nav-item:hover {
+    color: fade(white, 80%);
+    outline: none;
+    background-color: transparent;
+}
+
+.navbar-toggleable-md .navbar-nav .nav-item:focus, .navbar-toggleable-md .navbar-nav .nav-item:active {
+    outline: none;
+    background-color: #b5cabd;
+    border-radius: 3px;
+}
+
+@font-face {
+    font-family: bitter;
+    src: url("/fonts/Bitter-Regular.ttf");*/
+}
+
+/**
+  HEADER
+**/
+.about-text {
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 1.875rem;
+}
+
+.icon {
+    padding-right: .3rem;
+}
+
+
+/***** TOP CONTENT *****/
+#top-content {
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg/katie-reading-to-kids.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: table;   /** needed for the vertical aligment **/
+}
+
+#top-content .section-content{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.top-content .text {
+    color: #fff;
+}
+
+.top-content .text h1 {
+    font-weight: 300;
+}
+.top-content .text p {
+    font-weight: 400;
+}
+
+.top-content .description {
+    margin: 20px 0 10px 0;
+}
+
+.top-content .top-big-link {
+    margin-top: 35px;
+}
+
+.medium-paragraph {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #fff;
+    font-family: bitter, serif;
+}
+
+.btn-circle {
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    padding: 7px 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    color: white;
+    border: 2px solid white;
+    border-radius: 100% !important;
+    background: transparent;
+}
+
+.btn-circle:hover, .btn-circle:focus {
+    color: white;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/**
+  FOOTER
+**/
+footer {
+    border-top: 1px dotted #ddd;
+    background: #71b48a;
+    color: #f0f3f6;
+    padding: 45px 0 35px;
+}
+
+footer .email-address {
+    color: #333;
+}
+
+.footer-social {
+    text-align: right;
+}
+
+.footer-social .social{
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    margin: 0 0 .45rem .25rem;
+    padding-top: .2rem;
+    background: #333;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+}
+
+.footer-social a:hover, .footer-social a:focus {
+    background: #b5cabd;
+    color: #fff;
+}
+
+.footer-social a i {
+    vertical-align: middle;
+}
+
+/**
+    BACK TO TOP
+**/
+#backtotop {
+    border-radius: 50%;
+    line-height: 48px;
+    background-color: #333;
+    display: block;
+    position: fixed;
+    bottom: 50px;
+    text-align: center;
+    width: 50px;
+    right: 30px;
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+    color: #FFF;
+    font-size: 11px;
+    height: 50px;
+    z-index: 99999;
+    cursor: pointer;
+}
+#backtotop:hover {
+    background-color: #b5cabd;
+    transition: .4s;
+    color: #fff;
+}
+#backtotop.active {
+    opacity: 1;
+}
