@@ -10,7 +10,6 @@ Author: Karl Haviland
         1. BLOCK STYLES
         2. HEADER
 
-
 -------------------------------------------------------------------*/
 
 /**
@@ -23,12 +22,8 @@ html, body {
 }
 
 h2 {
-    /*color: #606060;*/
     color: #333;
-}
-
-.section-content {
-    padding: 4rem 0;
+    font-family: bitter, serif;
 }
 
 /** TOP NAV **/
@@ -173,6 +168,18 @@ h2 {
     color: white;
     outline: none;
     background: rgba(255, 255, 255, 0.1);
+}
+
+/**
+  SECTIONS
+**/
+.section-content {
+    padding: 2rem 0;
+}
+
+.section-content img {
+    width: 100%;
+    border-radius: 1.5rem;
 }
 
 /**

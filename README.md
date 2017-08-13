@@ -1,5 +1,4 @@
 # Brunch app
-
 This is a HTML5 application, built with [Brunch](http://brunch.io).
 
 ## Getting started
@@ -10,6 +9,7 @@ This is a HTML5 application, built with [Brunch](http://brunch.io).
 * Run:
     * `brunch watch --server` — watches the project with continuous rebuild. This will also launch HTTP server with [pushState](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history).
     * `brunch build --production` — builds minified project for production
+    * By default the local application runs at http://localhost:3333
 * Learn:
     * `public/` dir is fully auto-generated and served by HTTP server.  Write your code in `app/` dir.
     * Place static files you want to be copied from `app/assets/` to `public/`.
