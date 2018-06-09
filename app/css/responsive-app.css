@@ -1,14 +1,18 @@
 @media (max-width: 767px) {
     .navbar-toggleable-md .navbar-brand img {
-        height: rem;
+        height: 2.8rem;
     }
     .navbar {
         text-align: center;
         padding: 0rem 0rem;
     }
 
+    .navbar .container {
+        padding: .75rem;
+    }
+
     #top-content {
-      height: 44%;
+      height: 43%;
     }
 
     .container {

@@ -49,8 +49,12 @@ h2 {
 .navbar {
     background-color: #71b48a;
     color: #fff;
-    padding: 1rem 0rem;
     border-bottom: 1px solid #fff;
+    padding: 0rem;
+}
+
+.navbar .container {
+    padding: 1.5rem 0
 }
 
 .navbar-toggleable-md .navbar-brand{
@@ -66,14 +70,12 @@ h2 {
 
 .navbar-toggleable-md .navbar-nav .nav-link {
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 0 .7rem 0 .7rem;
     font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
 }
 
 .nav-donate-link {
-    margin-left:2rem;
     font-weight: 600;
 }
 
@@ -108,7 +110,7 @@ h2 {
 
 /***** TOP CONTENT *****/
 #top-content {
-    height: 48%;
+    height: 55%;
     position: relative;
     background: url(../images/bg/katie-reading-to-kids.jpg) center center no-repeat;
     -webkit-background-size: cover;
@@ -221,7 +223,7 @@ footer {
     border-top: 1px dotted #ddd;
     background: #71b48a;
     color: #f0f3f6;
-    padding: 45px 0 35px;
+    padding: 0rem;
 }
 
 footer .email-address {
@@ -229,20 +231,21 @@ footer .email-address {
 }
 
 .footer-social {
+    padding-left: .5rem;
     text-align: right;
 }
 
 .footer-social .social{
     display: inline-block;
-    width: 3rem;
-    height: 3rem;
-    margin: 0 0 .45rem .25rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    margin: 0 0 .1rem .2rem;
     padding-top: .2rem;
     background: #333;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #fff;
     line-height: 40px;
     text-align: center;
@@ -254,7 +257,12 @@ footer .email-address {
 }
 
 .footer-social a i {
+    padding-bottom: .5rem;
     vertical-align: middle;
+}
+
+.footer-address {
+    padding-right: .5rem;
 }
 
 /**
