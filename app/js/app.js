@@ -7,35 +7,36 @@ var jquery = require('jquery');
         init: function init(){
           // STICKY HEADER
             //$("header").sticky({topSpacing: 0, zIndex: 50});
+            if($(window).width() > 767){
+              // BACKTOTOP
+              $(window).scroll(function () {
+                  if ($(this).scrollTop() > 200) {
+                      $("#backtotop").addClass("active");
+                  } else {
+                      $("#backtotop").removeClass("active");
+                  }
+              });
 
-            // BACKTOTOP
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 200) {
-                    $("#backtotop").addClass("active");
-                } else {
-                    $("#backtotop").removeClass("active");
-                }
-            });
+              var $root = $('html, body');
+              $('#backtotop').on("click", function () {
+                  $root.animate({
+                      scrollTop: 0
+                  }, 2000);
+                  return false;
+              });
 
-            var $root = $('html, body');
-            $('#backtotop').on("click", function () {
-                $root.animate({
-                    scrollTop: 0
-                }, 2000);
-                return false;
-            });
-
-            $('a').click(function() {
-                $root.animate({
-                    scrollTop: $( $.attr(this, 'href') ).offset().top - 70
-                }, 500);
-                return false;
-            });
+              $('a').click(function() {
+                  $root.animate({
+                      scrollTop: $( $.attr(this, 'href') ).offset().top
+                  }, 500);
+                  return false;
+              });
+            }
         },
 
         helloWorld: function helloWorld(){
             console.log('Hello world!');
         }
-    }
+    };
     module.exports = App;
 })(jquery);

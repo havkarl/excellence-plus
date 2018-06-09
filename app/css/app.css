@@ -22,6 +22,7 @@ html, body {
 }
 
 h2 {
+    margin-bottom: 1rem;
     color: #333;
     font-family: bitter, serif;
 }
@@ -46,23 +47,25 @@ h2 {
 
 /** NAV **/
 .navbar {
-    background-color: #fff;
-    padding: 2rem 0 4rem 0;
+    background-color: #71b48a;
+    color: #fff;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #fff;
 }
 
 .navbar-toggleable-md .navbar-brand{
-    color: #333;
+    color: #fff;
     font-size: 2.5rem;
     font-family: bitter, serif;
 }
 .navbar-toggleable-md .navbar-brand  img{
-    height: 5rem;
+    height: 3.5rem;
     padding-left: .7rem;
     padding-right: .3rem;
 }
 
 .navbar-toggleable-md .navbar-nav .nav-link {
-    color: #333;
+    color: #fff;
     font-size: 1.2rem;
     padding: 0 .7rem 0 .7rem;
     font-family: 'Montserrat', sans-serif;
@@ -74,21 +77,19 @@ h2 {
     font-weight: 600;
 }
 
-.navbar-toggleable-md .navbar-nav .nav-item:hover {
-    color: fade(white, 80%);
+.navbar-toggleable-md .navbar-nav .nav-link:hover {
+    color: #333;
     outline: none;
     background-color: transparent;
 }
 
-.navbar-toggleable-md .navbar-nav .nav-item:focus, .navbar-toggleable-md .navbar-nav .nav-item:active {
-    outline: none;
-    background-color: #b5cabd;
-    border-radius: 3px;
+.navbar-toggleable-md .navbar-nav .nav-link:focus, .navbar-toggleable-md .navbar-nav .nav-link:active {
+    color: #fff;
 }
 
 @font-face {
     font-family: bitter;
-    src: url("/fonts/Bitter-Regular.ttf");*/
+    src: url("../webfonts/Bitter-Regular.ttf");*/
 }
 
 /**
@@ -107,21 +108,31 @@ h2 {
 
 /***** TOP CONTENT *****/
 #top-content {
-    width: 100%;
-    height: 100%;
+    height: 48%;
+    position: relative;
     background: url(../images/bg/katie-reading-to-kids.jpg) center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    display: table;   /** needed for the vertical aligment **/
 }
 
-#top-content .section-content{
-    display: table-cell;
-    vertical-align: middle;
+#top-content .container {
+    position: absolute;
+    bottom: -4rem;
+    position: absolute;
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%); /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
+    text-align: center;
+    width: 100%;
+}
+
+#lower-top-content .container {
     text-align: center;
 }
+
 
 .top-content .text {
     color: #fff;
@@ -158,8 +169,8 @@ h2 {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
-    color: white;
-    border: 2px solid white;
+    color: #71b48a;
+    border: 2px solid #71b48a;
     border-radius: 100% !important;
     background: transparent;
 }
@@ -170,16 +181,37 @@ h2 {
     background: rgba(255, 255, 255, 0.1);
 }
 
+#btncircle {
+    border-radius: 50%;
+    line-height: 38px;
+    background-color: #333;
+    bottom: 50px;
+    text-align: center;
+    width: 50px;
+    right: 30px;
+    transition: all 0.4s ease 0s;
+    color: #FFF;
+    font-size: 1.3rem;
+    height: 50px;
+    cursor: pointer;
+}
+#btncircle:hover {
+    background-color: #b5cabd;
+    transition: .4s;
+    color: #fff;
+}
+
 /**
   SECTIONS
 **/
-.section-content {
-    padding: 2rem 0;
+.container {
+    padding: 1.75rem 0;
 }
 
-.section-content img {
+section .container img {
     width: 100%;
     border-radius: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 /**

@@ -1,0 +1,28 @@
+@media (max-width: 767px) {
+    .navbar-toggleable-md .navbar-brand img {
+        height: rem;
+    }
+    .navbar {
+        text-align: center;
+        padding: 0rem 0rem;
+    }
+
+    #top-content {
+      height: 44%;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+    .top-content {
+        height: 50%;
+    }
+
+    .navbar-toggleable-md .navbar-brand{
+        font-size: 2rem;
+    }
+
+    .medium-paragraph {
+        font-size: 1.35rem;
+    }
+}

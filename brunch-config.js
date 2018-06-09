@@ -9,7 +9,7 @@ exports.config = {
     },
     styles: {
       bootstrap: ['dist/css/bootstrap.css'],
-      'font-awesome': ['css/font-awesome.css']
+      '@fortawesome': ['fontawesome/styles.css']
     }
   },
 
